@@ -1,0 +1,388 @@
+*{margin: 0;padding: 0;}
+html{ font-family: "Microsoft YaHei"; color:#333; font-size:100px;}
+html,body{width:100%;min-width:7.5rem;height:100%;background: #f4f4f4;}
+li{ list-style:none; }
+a{ text-decoration:none; color:#333; }
+a img{ border:0; }
+img{ vertical-align:middle;}
+table{border-collapse:collapse;border-spacing:0;}
+.clearfix{ *zoom:1; }
+.clearfix:after{ content:""; display:block; clear:both; }
+.fl{float: left}
+.fr{float: right}
+input {/*-webkit-appearance:none;*/outline: none}
+.main{width: 7.5rem;margin: 0 auto}
+.zg-wrap{margin: 0 auto;width: 7.5rem;}
+header {
+    width: 7.5rem;
+    height: .8rem;
+    background: #f2f2f2;
+}
+header a {
+    font:700 .2rem/.4rem "microsoft yahei";
+    color:#fff;
+}
+header a img {
+    float: left;
+}
+header .logo {
+    display: block;
+    float: left;
+    width: 2rem;
+    height: .36rem;
+    margin-top: .2rem;
+    margin-left: .3rem;
+}
+header .zgfb {
+    display: block;
+    float: right;
+    width: 1.15rem;
+    height: .36rem;
+    margin-right: .3rem;
+    margin-top: .2rem;
+}
+header .logo img {
+    width: .75rem;
+    height: .34rem;
+    margin-right: .1rem;
+}
+header .zgfb img {
+    width: .27rem;
+    height: .24rem;
+    margin-top: .12rem;
+}
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -3.75rem;
+    z-index: 899;
+}
+.navbar {
+    box-shadow: none;
+    background: rgba(70,70,70,0);
+}
+.navbar.active {
+    background: rgb(255,255,255);
+    transition: background 3s;
+}
+.navbar.active a {
+    color:#000;
+}
+/*footer*/
+.foot{
+    position: fixed;
+    bottom:0;
+    width:7.5rem;
+    height:.9rem;
+    overflow: hidden;
+    z-index:999;
+}
+.foot a{
+    float: left;
+    width:3.75rem;
+    font:.26rem/0.9rem 'Microsoft YaHei';
+    text-align: center;
+}
+.foot a:first-child{
+    background: #f2f2f2;
+    color: #000;
+}
+.foot a:first-child img {
+    width: .47rem;
+    height: .4rem;
+    margin-right: .1rem;
+}
+.foot a:last-child{
+    background: #dc2f3c;
+    color: #fff;
+}
+.foot a:last-child img {
+    width: .3rem;
+    height: .38rem;
+    margin-right: .1rem;
+}
+
+
+/*m_banner*/
+.mban {
+    width: 7.5rem;
+    height: 5.77rem;
+    background: url(../images/ban_01.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+}
+.mban h1 {
+    float: left;
+    text-indent: -9999px;
+}
+/*zgm1*/
+.zgm1 {
+    width:7.5rem;
+    height: 11.77rem;
+    padding-top: 1.16rem;
+    background: url(../images/m1_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    box-sizing:border-box;
+    margin-top: -1px;
+}
+.zgm1 .con1{
+
+}
+.zgm1 .con1_ul{
+  width: 5.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  /*margin: auto;*/
+  margin-left: 1rem;
+  margin-bottom: .1rem;
+}
+.zgm1 .con1_ul li{
+  width: 1.1rem;
+  height: .9rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: .05rem;
+  border-radius: .1rem;
+  margin-bottom: .1rem;
+  margin-right: .05rem;
+  background: #31b2ec;
+}
+.zgm1 .con1_ul li>div{
+   font:400 .2rem/.22rem "microsoft yahei";
+   color:#fff;
+   text-align: center;
+   margin-bottom: .07rem;
+}
+.zgm1 .con1_ul li>a{
+  width: .7rem;
+  height: .25rem;
+  text-align: center;
+  margin:auto;
+  border-radius: .06rem;
+  background: #feec42;
+   font:400 .2rem/.25rem "microsoft yahei";
+   color:#333333;
+}
+.zgm1 .tit1{
+    height: .75rem;
+    background: url(../images/m1_tit.png) no-repeat center top;
+    -webkit-background-size: 3.7rem;
+    background-size: 3.7rem;
+    margin-bottom: .1rem;
+}
+.zgm1 .course{
+  display: flex;
+  justify-content: center;
+}
+.zgm1 .course .left{
+ width: 2.7rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.zgm1 .course .right{
+ width: 2.7rem;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+.zgm1 .course li{
+  display: flex;
+ justify-content: space-around;
+  height: .73rem;
+}
+.zgm1 .course li a{
+    width: .72rem;
+    height: .73rem;
+    padding-top: .15rem;
+   font:400 .2rem/.22rem "microsoft yahei";
+   color:#fff;
+   text-align: center;
+   background: url(../images/click.png) no-repeat center top;
+    -webkit-background-size:.72rem;
+    background-size:.72rem;
+}
+.zgm1 .course li .date_lesson{
+   display: flex;
+   flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.zgm1 .course li .date_lesson_top{
+  width: 1.56rem;
+  height: .29rem;
+  font:400 .2rem/.29rem "microsoft yahei";
+   color:#333333;
+   text-align: center;
+   background: #feec42;
+   border-radius: .09rem;
+}
+.zgm1 .course li .date_lesson_bot{
+   font:400 .2rem/.20rem "microsoft yahei";
+   color:#333333;
+   text-align: left;
+   margin-top: .1rem;
+}
+.zgm1 .line{
+    width: .32em;
+    height: 5.15rem;
+    background: url(../images/lines.png) no-repeat center top;
+    -webkit-background-size:.32rem;
+    background-size:.32rem;
+}
+/*zgm2*/
+.zgm2 {
+    width:7.5rem;
+    height: 4.96rem;
+    padding-top: .5rem;
+    background: url(../images/m2_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    box-sizing:border-box;
+}
+.zgm2 .con2{
+   display: block;
+    position: relative;
+    width:6.72rem;
+    height: 3.93rem;
+    margin:auto;
+    background: url(../images/m2.png) no-repeat center top;
+    -webkit-background-size: 6.72rem;
+    background-size: 6.72rem;
+}
+.zgm2 .imgbx{
+  position: absolute;
+    right: 1.44rem;
+    bottom: .5rem;
+    width: 1.46rem;
+    height: 1.5rem;
+    border:2px solid  #92d5f5;
+}
+.zgm2 img {
+    width: 1.44rem;
+    height: 1.46rem;
+    vertical-align: top;
+}
+
+/*zgm3*/
+.zgm3 {
+    width:7.5rem;
+    height: 23.37rem;
+    padding-top: 1.4rem;
+    background: url(../images/m3_03.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    box-sizing:border-box;
+}
+.zgm3 .tab_tit{
+    width: 4.1rem;
+    height: .6rem;
+    margin: auto;
+   font:400 .2rem/.6rem "microsoft yahei";
+   color:#036ab7;
+   text-align: center;
+   background: #bae3f9;
+   border-radius: .1rem .1rem 0 0;
+}
+.tab_w{
+  width: 5.5rem;
+  margin:auto;
+}
+table{
+  width: 100%;
+  border-collapse: collapse;
+  margin: auto;
+}
+table th{
+   font:400 .2rem/.4rem "microsoft yahei";
+   color:#036ab7;
+   text-align: center;
+  background: #fff;
+  border: 1px solid #0068b7;
+}
+table th:nth-child(1){
+   width: 17%;
+}
+table th:nth-child(2){
+  width: 27%;
+}
+table th:nth-child(3){
+  width: 26%;
+}
+table th:nth-child(4){
+  width: 30%;
+}
+table td{
+  font:400 .2rem/.26rem "microsoft yahei";
+  text-align: center;
+  color: #036ab7;
+  background: #bae3f9;
+  border: 1px solid #0068b7;
+  padding: .05rem;
+}
+.zgm3 .tab_tit2{
+  font:400 .2rem/.6rem "microsoft yahei";
+  text-align: center;
+  color: #036ab7;
+  width: 5.47rem;
+  margin:auto;
+  border: 1px solid #0068b7;
+}
+/*zgm4*/
+.zgm4 {
+    width:7.5rem;
+    height: 3.65rem;
+    padding-top: .5rem;
+    background: url(../images/m4_02.jpg) no-repeat center top;
+    -webkit-background-size: 7.5rem;
+    background-size: 7.5rem;
+    box-sizing:border-box;
+}
+.zgm4 .con4{
+    width:6.73rem;
+    height: 2.64rem;
+    padding-top: .3rem;
+    margin: auto;
+    background: url(../images/con3.png) no-repeat center top;
+    -webkit-background-size: 6.73rem;
+    background-size: 6.73rem;
+    display: flex;
+    justify-content: center;
+}
+.zgm4 .con4 div{
+   flex: 1;
+   text-align: center;
+}
+.zgm4 .con4 .item1{
+  margin-left: .5rem;
+}
+.zgm4 .con4 .item3{
+  margin-right: .5rem;
+}
+.zgm4 .con4 h4{
+  margin-bottom: .2rem;
+}
+.zgm4 .con4 .item1 h4{
+     height: .2rem;
+    background: url(../images/gz.png) no-repeat center top;
+    -webkit-background-size: 1.79rem;
+    background-size: 1.79rem;
+}
+.zgm4 .con4 .item2 h4{
+    height: .2rem;
+    background: url(../images/wb.png) no-repeat center top;
+    -webkit-background-size: 1.6rem;
+    background-size: 1.6rem;
+}
+.zgm4 .con4 .item3 h4{
+     height: .2rem;
+    background: url(../images/bk.png) no-repeat center top;
+    -webkit-background-size: 1.39rem;
+    background-size: 1.39rem;
+}
+.zgm4 .con4 img{
+    width: 1.46rem;
+    height: 1.46rem;
+}
